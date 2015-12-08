@@ -48,8 +48,8 @@ module.exports = function (grunt) {
         files: ['Gruntfile.js']
       },
       styles: {
-        files: ['<%= config.app %>/styles/{,*/}*.css'],
-        tasks: ['newer:copy:styles', 'postcss']
+        files: ['<%= config.app %>/styles/{,*/}*.scss'],
+        tasks: ['newer:copy:styles', 'postcss','sass']
       }
     },
 
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
         options: {
           files: [
             '<%= config.app %>/{,*/}*.html',
-            '.tmp/styles/{,*/}*.css',
+            '.tmp/styles/{,*/}*.scss',
             '<%= config.app %>/images/{,*/}*',
             '.tmp/scripts/{,*/}*.js'
           ],
@@ -345,6 +345,17 @@ module.exports = function (grunt) {
       }
     },
 
+    sass: {                              // Task 
+      dist: {                            // Target 
+        options: {                       // Target options 
+          style: 'expanded'
+        },
+        files: {                         // Dictionary of files 
+          'app/main.css': 'app/styles/main.scss'      // 'destination': 'source' 
+        }
+      }
+    },
+
     // Run some tasks in parallel to speed up build process
     concurrent: {
       server: [
@@ -364,6 +375,7 @@ module.exports = function (grunt) {
     }
   });
 
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('serve', 'start the server and preview your app', function (target) {
 
@@ -376,6 +388,7 @@ module.exports = function (grunt) {
       'wiredep',
       'concurrent:server',
       'postcss',
+      'sass',
       'browserSync:livereload',
       'watch'
     ]);
