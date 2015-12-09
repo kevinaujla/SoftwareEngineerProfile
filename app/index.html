@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" ng-app="myApp" lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -7,42 +7,31 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <!-- build:css(.) styles/vendor.css -->
-    <!-- bower:css -->
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:css(.tmp) styles/main.css -->
     <link rel="stylesheet" href="/main.css">
-    <!-- endbuild -->
-    <!-- build:js scripts/vendor/modernizr.js -->
     <script src="/bower_components/modernizr/modernizr.js"></script>
-    <!-- endbuild -->
 </head>
 
 <body>
-    <!--[if lt IE 10]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
     <nav>
         <div>
-            <a href="#">Github</a>
+            <a href="https://github.com/kevinaujla" target="_blank">Github</a>
         </div>
         <div>
-            <a href="#">Linkedin</a>
+            <a href="https://www.linkedin.com/in/kevinaujla" target="_blank">Linkedin</a>
         </div>
         <div>
             <a href="#">Portfolio</a>
         </div>
+         <div>
+            <a href="#">Blog</a>
+        </div>
     </nav>
-    <!-- build:js(.) scripts/vendor.js -->
-    <!-- bower:js -->
+  
     <script src="/bower_components/jquery/dist/jquery.js"></script>
-    <!-- endbower -->
-    <!-- endbuild -->
-    <!-- build:js(.) scripts/plugins.js -->
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+  
     <script src="/bower_components/bootstrap/js/affix.js"></script>
     <script src="/bower_components/bootstrap/js/alert.js"></script>
     <script src="/bower_components/bootstrap/js/dropdown.js"></script>
@@ -55,27 +44,10 @@
     <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
     <script src="/bower_components/bootstrap/js/collapse.js"></script>
     <script src="/bower_components/bootstrap/js/tab.js"></script>
-    <!-- endbuild -->
-    <!-- build:js scripts/main.js -->
-    <script src="scripts/main.js"></script>
-    <!-- endbuild -->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
-    (function(b, o, i, l, e, r) {
-        b.GoogleAnalyticsObject = l;
-        b[l] || (b[l] =
-            function() {
-                (b[l].q = b[l].q || []).push(arguments)
-            });
-        b[l].l = +new Date;
-        e = o.createElement(i);
-        r = o.getElementsByTagName(i)[0];
-        e.src = 'https://www.google-analytics.com/analytics.js';
-        r.parentNode.insertBefore(e, r)
-    }(window, document, 'script', 'ga'));
-    ga('create', 'UA-XXXXX-X');
-    ga('send', 'pageview');
-    </script>
+
+    <script src="app.js"></script>
+    <script src="home/home.js"></script>
+
 </body>
 
 </html>
