@@ -13,20 +13,27 @@
 </head>
 
 <body>
-    <nav>
-        <div>
+
+     <header class="container-fluid">
+    <ul>
+        <li>
             <a href="https://github.com/kevinaujla" target="_blank">Github</a>
-        </div>
-        <div>
+        </li>
+        <li>
             <a href="https://www.linkedin.com/in/kevinaujla" target="_blank">Linkedin</a>
-        </div>
-        <div>
+        </li>
+        <li>
             <a href="#">Portfolio</a>
-        </div>
-         <div>
+        </li>
+         <li>
             <a href="#">Blog</a>
-        </div>
-    </nav>
+        </li>
+    </ul>
+    <header>
+
+        <div ng-view class="container"></div>
+
+        
   
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
