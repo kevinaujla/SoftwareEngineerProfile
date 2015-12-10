@@ -1,35 +1,61 @@
 body {
-  background-color: pink;
+  background-color: white;
 }
 
 header {
+  background-color: black;
   display: flex;
+  padding: 20px 10px 20px 0px;
 }
 header ul {
-  border-bottom: 4px solid green;
   display: flex;
   flex: 1;
-  height: 200px;
-  margin-bottom: 1000;
+  height: 250px;
+  margin: 0px;
 }
 header ul li {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+header ul li:first-child {
   flex: 1;
   display: flex;
   align-items: center;
 }
+header ul li:last-child {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+header ul li img {
+  margin-top: 0px;
+  padding-top: 10px;
+}
 header ul li a {
-  border: 1px solid blue;
-  color: #005400;
+  color: white;
   text-align: center;
   text-transform: uppercase;
   flex: 1;
-  font-size: 22px;
-  font-family: "Times New Roman";
+  font-size: 28px;
+  font-family: monospace;
 }
 header ul li a:hover {
-  font-size: 20px;
+  font-size: 32px;
   text-decoration: none;
-  color: #00B300;
+  color: red;
+}
+
+i.icon-github-square {
+  font-size: 100px;
+}
+
+i.icon-facebook-square {
+  font-size: 100px;
+}
+
+i.icon-linkedin-square {
+  font-size: 100px;
 }
 
 /*# sourceMappingURL=main.css.map */
