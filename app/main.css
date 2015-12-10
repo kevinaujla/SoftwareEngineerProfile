@@ -1,15 +1,39 @@
-body {
-  background-color: white;
-}
-
 @font-face {
   font-family: visby;
   src: url("font/VisbyCF-Thin.ttf");
 }
+@font-face {
+  font-family: visby1;
+  src: url("font/VisbyCF-Thin.ttf");
+}
+@-webkit-keyframes fadein {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, -125px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+@-webkit-keyframes fadeup {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(0px, 400px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0px, 0px);
+  }
+}
+body {
+  background-color: black;
+}
+
 header {
   background-color: black;
   display: flex;
-  padding: 10px 10px 20px 0px;
+  padding: 10px 10px 0px 0px;
 }
 header ul {
   display: flex;
@@ -23,7 +47,7 @@ header ul li {
   align-items: center;
 }
 header ul li:first-child {
-  flex: .5;
+  flex: 1;
   display: flex;
   align-items: center;
 }
@@ -37,6 +61,11 @@ header ul li img {
   padding-top: 10px;
   height: 180px;
   width: 180px;
+  -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
 }
 header ul li a {
   color: white;
@@ -45,6 +74,11 @@ header ul li a {
   flex: 1;
   font-size: 36px;
   font-family: visby;
+  -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
 }
 header ul li a:hover {
   font-size: 32px;
@@ -54,14 +88,52 @@ header ul li a:hover {
 
 i.icon-github-square {
   font-size: 90px;
+  -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
 }
 
 i.icon-facebook-square {
   font-size: 90px;
+  -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
 }
 
 i.icon-linkedin-square {
   font-size: 90px;
+  -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
+}
+
+h1 {
+  font-family: visby1;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+}
+
+p {
+  font-family: visby1;
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.col-md-10 {
+  margin: 0px 0px 10px 115px;
+  -webkit-animation: fadeup ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode: forwards;
+  /*Chrome 16+, Safari 4+*/
 }
 
 /*# sourceMappingURL=main.css.map */

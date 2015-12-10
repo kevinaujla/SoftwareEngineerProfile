@@ -1,12 +1,7 @@
-@font-face {
-  font-family: visby;
-  src: url('font/VisbyCF-Thin.ttf');
-}
-
 header{
   background-color:black;
   display: flex;
-  padding:10px 10px 20px 0px;
+  padding:10px 10px 0px 0px;
   ul{
     display: flex;
     flex: 1;
@@ -14,7 +9,7 @@ header{
     margin: 0px;
     li{
      &:first-child{
-          flex: .5;
+          flex: 1;
            display: flex;
            align-items: center;
     }
@@ -28,6 +23,10 @@ header{
     padding-top:10px;
     height: 180px;
     width:  180px;
+     -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
     }
       flex: 3.4;
       display: flex;
@@ -39,6 +38,10 @@ header{
         flex: 1;
         font-size: 36px;
         font-family: visby;
+         -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
       }
     a:hover{
      font-size:32px;
@@ -52,12 +55,24 @@ header{
 
 i.icon-github-square {
     font-size: 90px;
+     -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
 }
 
 i.icon-facebook-square {
     font-size: 90px;
+     -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
 }
 
 i.icon-linkedin-square {
     font-size: 90px;
+     -webkit-animation: fadein ease .3s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-transform-origin: 50% 50%;
+  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/
 }
