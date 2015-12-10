@@ -10,50 +10,52 @@
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/main.css">
     <script src="/bower_components/modernizr/modernizr.js"></script>
+    <link href="https://file.myfontastic.com/fD3L3GqKYiQuBm8uQjYyrF/icons.css" rel="stylesheet">
 </head>
 
 <body>
 
+    <nav>
      <header class="container-fluid">
     <ul>
         <li>
-            <a href="https://github.com/kevinaujla" target="_blank">Github</a>
+            <a href="https://github.com/kevinaujla" target="_blank">
+            <i class="icon-github-square"></i>
+            </a>
         </li>
         <li>
-            <a href="https://www.linkedin.com/in/kevinaujla" target="_blank">Linkedin</a>
+            <a href="https://www.linkedin.com/in/kevinaujla" target="_blank">
+                <i class="icon-linkedin-square"></i>
+            </a>
         </li>
         <li>
-            <a href="#">Portfolio</a>
+            <a href="https://www.facebook.com/kevin.aujla" target="_blank">
+              <i class="icon-facebook-square"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#/portfolio">Portfolio</a>
         </li>
          <li>
-            <a href="#">Blog</a>
+            <a href="#/blog">Blog</a>
         </li>
     </ul>
     <header>
-
-       <!--  <div ng-view class="container"></div> -->
-
+    </nav>
         
+
+        <div ng-view class="container"></div>
+
+
   
     <script src="/bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/angular/angular.js"></script>
     <script src="bower_components/angular-route/angular-route.js"></script>
-  
-    <script src="/bower_components/bootstrap/js/affix.js"></script>
-    <script src="/bower_components/bootstrap/js/alert.js"></script>
-    <script src="/bower_components/bootstrap/js/dropdown.js"></script>
-    <script src="/bower_components/bootstrap/js/tooltip.js"></script>
-    <script src="/bower_components/bootstrap/js/modal.js"></script>
-    <script src="/bower_components/bootstrap/js/transition.js"></script>
-    <script src="/bower_components/bootstrap/js/button.js"></script>
-    <script src="/bower_components/bootstrap/js/popover.js"></script>
-    <script src="/bower_components/bootstrap/js/carousel.js"></script>
-    <script src="/bower_components/bootstrap/js/scrollspy.js"></script>
-    <script src="/bower_components/bootstrap/js/collapse.js"></script>
-    <script src="/bower_components/bootstrap/js/tab.js"></script>
 
     <script src="app.js"></script>
     <script src="home/home.js"></script>
+    <script src="blog/blog.js"></script>
+    <script src="portfolio/portfolio.js"></script>
 
 </body>
 
