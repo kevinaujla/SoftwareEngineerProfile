@@ -3,6 +3,14 @@ h1{
 	text-align: center;
 	font-size: 60px;
 	color: white;
+	margin-bottom: 20px;
+}
+h2{
+	font-family: visby1;
+	text-align: center;
+	font-size: 60px;
+	color: white;
+	margin-bottom: 20px;
 }
 p{
 	font-family: visby1;
@@ -12,9 +20,26 @@ p{
 }
 
 .col-md-10 {
-    margin: 0px 0px 10px 115px;
+    margin: 0px 0px 80px 115px;
     -webkit-animation: fadeup ease .3s;
-  -webkit-animation-iteration-count: 1;
-  -webkit-transform-origin: 50% 50%;
-  -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-transform-origin: 50% 50%;
+  	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
 }
+
+#skillsSection{
+margin-top: 60px;
+}
+
+#skillsImg {
+    border-radius: 50%;
+    margin-left: 135px;
+    margin-right: 60px;
+}
+
+#skillsRow{
+	display: flex;
+    flex-direction: row;
+    margin-bottom: 80px;
+}
+
