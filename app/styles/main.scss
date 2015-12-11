@@ -1,6 +1,6 @@
 @font-face {
   font-family: visby;
-  src: url('font/VisbyCF-Thin.ttf');
+  src: url('font/VisbyCF-Bold.ttf');
 }
 
 @font-face {
@@ -28,6 +28,28 @@
     opacity:1;
     -webkit-transform:  translate(0px,0px)  ;
   }
+}
+
+h1{
+  font-family: visby;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  margin-bottom: 20px;
+}
+h2{
+  font-family: visby;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  margin-bottom: 20px;
+}
+h3{
+  font-family: visby1;
+
+  font-size: 20px;
+  color: white;
+  margin-bottom: 20px;
 }
 
 body{
