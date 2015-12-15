@@ -46,7 +46,6 @@ h3 {
   font-family: visby1;
   font-size: 20px;
   color: white;
-  margin-bottom: 20px;
 }
 
 body {
@@ -169,7 +168,10 @@ p {
 }
 
 img#examples {
-  padding-left: 140px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
 }
 
 span.bolding {
@@ -180,6 +182,7 @@ span.bolding {
 span.bolding1 {
   font-family: visby;
   font-size: 42px;
+  color: white;
 }
 
 .wow.fadeIn.ng-scope {
