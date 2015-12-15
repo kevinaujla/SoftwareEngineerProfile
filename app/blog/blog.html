@@ -57,8 +57,15 @@ It may help to see a simple example of what MVC looks like in real code. For thi
 
 
 <div class="wow zoomIn">
-<h1>Git Workflow for Team Projects</h1>
-<h3>Insert Blog</h3>
+<h1>What kind of scope do variables have?</h1>
+<h3>Variables can have global or local scope. Variables with global scope can be accessed from anywhere, and variables with local scope can only be accessed from within its context.</h3>
+<h3>A variable with global scope is simply defined out in the open. For example:</h3>
+<img src="/blog/CodeExamples/global.png" id="examples">
+<h3>A variable with local scope is defined within a function and cannot be accessed outside of that function. For example:</h3>
+<img src="/blog/CodeExamples/local.png" id="examples">
+<h2>Special Cases</h2>
+<h3>A variable without the “var” in front of it is automatically global. A nested function can access variables in its parent function, but the parent function cannot access variables in the nested function.</h3>
+<h3>Closures allow variables in an outer, but not global, scope to be “remembered.”</h3>
 </div>
 
 <div class="wow zoomIn">
