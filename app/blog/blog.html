@@ -58,6 +58,8 @@ It may help to see a simple example of what MVC looks like in real code. For thi
 
 <div class="wow zoomIn">
 <h1>What kind of scope do variables have?</h1>
+</div>
+<div class="wow fadeIn">
 <h3>Variables can have global or local scope. Variables with global scope can be accessed from anywhere, and variables with local scope can only be accessed from within its context.</h3>
 <h3>A variable with global scope is simply defined out in the open. For example:</h3>
 <img src="/blog/CodeExamples/global.png" id="examples">
@@ -69,9 +71,44 @@ It may help to see a simple example of what MVC looks like in real code. For thi
 </div>
 
 <div class="wow zoomIn">
-<h1>Tree Data Structure in JavaScript</h1>
-<h3>Insert Blog</h3>
+<h1>Git Workflow for Team Projects</h1>
 </div>
+<div class="wow fadeIn">
+<h3>One of the major focuses of any project is using git and github properly while having the right workflow. This post is a step-by-step guide to having a proper git/github workflow for team/group coding projects.</h3>
+<h2>Step 1: Create a central github repository</h2>
+<h3>Create a central remote repository for your project. For some of my projects, we created a new organization, which is a feature that Github allows. Then, we each joined this organization to contribute to this central repository.</h3>
+<h2>Step 2: Each team member forks and clones the central repository</h2>
+<h3>Make sure you do not clone from the central repository directly. Each team member will be pushing to their own remote repository and then making pull requests to the central repository for review before getting their changes merged in.</h3>
+<h2>Step 3: Add the central repository as a remote upstream</h2>
+<h3>This way, you can constantly pull the latest changes from this central repository. To add this repository as an upstream, use the following code:</h3>
+<img src="/blog/CodeExamples/AddUpstream.png" id="examples">
+<h2>Step 4: Create a branch for one specific change/addition</h2>
+<h3>To begin the process of adding something to the central repository, first create a branch for the specific feature/thing you will be working on. For example, if you want to add to the documentation, you can create a doc branch using this code in the terminal:</h3>
+<img src="/blog/CodeExamples/doc.png" id="examples">
+<h3>This command will both create and checkout the doc branch at the same time.</h3>
+<h3>Or, to create a feature branch, you could do this:</h3>
+<img src="/blog/CodeExamples/feat.png" id="examples">
+<h2>Step 5: Make changes and commit your changes to this new branch</h2>
+<h3>Make sure your changes are specifically related to this new brnach that you have just created, to keep things organized. If you find that you are starting to make changes that relate to another specific topic, stop and create a new branch for that topic. Otherwise, it will be difficult for team members to figure out what exactly you completed in your pull request/commits.</h3>
+<h3>For this step, you will just be adding and committing normally with git add {file} and git commit -m {message}</h3>
+<h2>Step 6: Pull the latest changes from the central repository</h2>
+<h3>Make sure that your branch is up to date before pushing up to your remote repository. To pull the latest changes from the central repository in a clean manner, use the following command:</h3>
+<img src="/blog/CodeExamples/rebase.png" id="examples">
+<h3>The upstream command will incorporate all the changes into your commit history in a clean, streamlined manner.</h3>
+<h2>Step 7: After you have made one significant accomplishment with your code, push up to the branch with the same name on your remote repository</h2>
+<h3>To do this, you will use this command:</h3>
+<img src="/blog/CodeExamples/pushDoc.png" id="examples">
+<h3>or</h3>
+<img src="/blog/CodeExamples/pushFeat.png" id="examples">
+<h2>Step 8: Create a pull request from that branch of your remote repository to the central repository</h2>
+<h3>To do this, you will go to your github account page online, and then click on the green pull request button near the top left corner. Then, select the correct branch from your remote repository, and the correct branch of the central repository (for us, we are just pushing to the master branch of the central repository).</h3>
+<h3>Make sure your commit message is clear. It is oftentimes good practice to put (doc) or (feat) at the beginning of your commit message. If you need to add details, use the comment section below the commit message.</h3>
+<h2>Step 9: Wait for your pull request to be accepted/merged</h2>
+<h3>This part just consists of waiting. If you made a good change and your pull request/commit message is clear and concise, there shouldn’t be any problems.</h3>
+<h2>Step 10: Delete the branch that you originally made</h2>
+<h3>Deleting that branch is cleanup.</h3>
+<h3>Then, to make a new change, you will repeat steps 3-8.</h3>
+</div>	
 
 
 
