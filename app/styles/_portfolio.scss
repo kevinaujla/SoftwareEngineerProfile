@@ -1,0 +1,47 @@
+.project{
+ //border: 1px solid red;
+ height: 200px;
+ border-radius: 5px;
+  &:hover .overlay{
+   opacity: 1;
+  }
+}
+
+.project--instacutz{
+  background-image: url('./portfolio/InstaCutz.png');
+  width: 899px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.project--game{
+  background-image: url('./portfolio/Game.png');
+  width: 899px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.project--challenge{
+  background-image: url('./portfolio/Challengr.png');
+  width: 899px;
+  height: 600px;
+  margin: 0 auto;
+}
+
+.overlay {  
+ background: rgba(27, 26, 26, 0.8);
+ border-radius: 5px;
+ opacity: 0;
+ transition: opacity .3s ease;
+ flex: 1;
+ height: 100%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ a{
+  color: white;
+  font-size: 42px;
+  margin-right: 80px;
+  font-family: visby;
+ }
+}
