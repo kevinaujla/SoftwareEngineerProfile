@@ -1,3 +1,8 @@
+// Media Queries
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 .project{
  //border: 1px solid red;
  height: 200px;
@@ -13,23 +18,81 @@
 
 .project--instacutz{
   background-image: url('./portfolio/InstaCutz.png');
+  width: 350px;
+  height: 600px;
+  margin: 0 auto;
+
+   @media (min-width: $screen-sm-min) {
+   width: 700px;
+  height: 600px;
+  margin: 0 auto;
+
+  }
+  @media (min-width: $screen-md-min) {
   width: 899px;
   height: 600px;
   margin: 0 auto;
+  }
+  @media (min-width: $screen-lg-min) {
+  width: 899px;
+  height: 600px;
+  margin: 0 auto;
+
+  }
 }
 
 .project--game{
   background-image: url('./portfolio/Game.png');
+  width: 350px;
+  height: 600px;
+  margin: 0 auto;
+
+  @media (min-width: $screen-sm-min) {
+  width: 700px;
+  height: 600px;
+  margin: 0 auto;
+
+  }
+  @media (min-width: $screen-md-min) {
   width: 899px;
   height: 600px;
   margin: 0 auto;
+
+
+  }
+  @media (min-width: $screen-lg-min) {
+  width: 899px;
+  height: 600px;
+  margin: 0 auto;
+
+  }
 }
 
 .project--challenge{
   background-image: url('./portfolio/Challengr.png');
+  width: 350px;
+  height: 600px;
+  margin: 0 auto;
+
+  @media (min-width: $screen-sm-min) {
+  width:  700px;
+  height: 600px;
+  margin: 0 auto;
+
+  }
+  @media (min-width: $screen-md-min) {
   width: 899px;
   height: 600px;
   margin: 0 auto;
+
+
+  }
+  @media (min-width: $screen-lg-min) {
+  width: 899px;
+  height: 600px;
+  margin: 0 auto;
+
+  }
 }
 
 .overlay {  

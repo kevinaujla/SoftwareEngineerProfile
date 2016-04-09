@@ -1,16 +1,49 @@
+// Media Queries
+$screen-sm-min: 768px;
+$screen-md-min: 992px;
+$screen-lg-min: 1200px;
+
 p{
 	font-family: visby1;
-	text-align: center;
+	text-align: justify;
 	font-size: 20px;
 	color: white;
+
+  @media (min-width: $screen-sm-min) {
+
+  }
+  @media (min-width: $screen-md-min) {
+
+  }
+  @media (min-width: $screen-lg-min) {
+  text-align: center;
+
+  }
+
 }
 
 .col-md-10 {
+    
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
     margin: 0px 0px 80px 115px;
     -webkit-animation: fadeup ease .3s;
-  	-webkit-animation-iteration-count: 1;
-  	-webkit-transform-origin: 50% 50%;
-  	-webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+
+
+    }  
+    @media (min-width: $screen-lg-min) {
+    margin: 0px 0px 80px 115px;
+    -webkit-animation: fadeup ease .3s;
+    -webkit-animation-iteration-count: 1;
+    -webkit-transform-origin: 50% 50%;
+    -webkit-animation-fill-mode:forwards; /*Chrome 16+, Safari 4+*/ 
+
+    }
 }
 
 #skillsSection{
@@ -19,13 +52,37 @@ margin-top: 60px;
 
 #skillsImg {
     border-radius: 50%;
+    width: 33%;
+
+    @media (min-width: $screen-sm-min) {
+    margin-left: 25px;
+    margin-right: 60px;
+    }
+    @media (min-width: $screen-md-min) {
+    margin-left: 95px;
+    margin-right: 60px;
+    }  
+    @media (min-width: $screen-lg-min) {
     margin-left: 135px;
     margin-right: 60px;
+    }
+
 }
 
 #skillsRow{
 	display: flex;
     flex-direction: row;
     margin-bottom: 80px;
+
+    @media (min-width: $screen-sm-min) {
+
+    }
+    @media (min-width: $screen-md-min) {
+
+    }  
+    @media (min-width: $screen-lg-min) {
+  
+
+    }
 }
 
